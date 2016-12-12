@@ -342,18 +342,34 @@ li.active a.hvr-underline-from-center:before {
   padding: 2% 0;
 }
 
+figure {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-right: 85px;
+  box-shadow: 0 0 5px #585123;
+  border-radius: 5px;
+}
+
+.cap-bot figcaption { left: 0; bottom: -30%;}
+.cap-bot:hover figcaption { bottom: 0; }
+
 figcaption {
   position: absolute;
-  background: rgba(0,0,0,0.75);
-  color: white;
+  background: rgba(88,81,35,.9);
+  color: #dfd6a7;
   padding: 10px 20px;
   opacity: 0;
-  bottom: 9%;
+  bottom: 0;
   left: -30%;
   -webkit-transition: all 0.6s ease;
   -moz-transition:    all 0.6s ease;
   -o-transition:      all 0.6s ease;
   border-radius: 5px;
+}
+
+figure:hover {
+  box-shadow: 0 0 20px #585123;
 }
 
 figure:hover figcaption {
